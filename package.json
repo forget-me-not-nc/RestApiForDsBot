@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "akaneko": "^5.2.2",
+    "express": "^4.17.2"
+  }
+}
