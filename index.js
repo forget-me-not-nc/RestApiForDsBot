@@ -5,7 +5,6 @@ const api = express();
 api.get('/image',  (req, res) => {
 
     yourFunctionName().then((response) => {
-        console.log(response);
         res.send(response);
     })
 
