@@ -1,5 +1,5 @@
 const express = require('express');
-const { yourFunctionName } = require('./src/akaneko');
+const { getHentaiImage } = require('./src/akaneko');
 const api = express(); 
 
 api.get('/awake', (req, res) => {
@@ -9,9 +9,9 @@ api.get('/awake', (req, res) => {
 
 api.get('/image',  (req, res) =>
 {
-    yourFunctionName().then((response) => {
+    getHentaiImage().then((response) => {
         res.send(response);
     })
 });
 
-api.listen(process.env.PORT);
+api.listen(3000);

@@ -1,8 +1,35 @@
 const akaneko = require('akaneko');
 
-function yourFunctionName()
+const tags = [
+    `bdsm`,
+    `ass`,
+    `blowjob`,
+    `cum`,
+    `doujin`,
+    `feet`,
+    `femdom`,
+    `foxgirl`,
+    `gifs`,
+    `glasses`,
+    `zettaiRyouiki`,
+    `yuri`,
+    `uniform`,
+    `thighs`,
+    `tentacles`,
+    `succubus`,
+    `school`,
+    `pussy`,
+    `panties`,
+    `orgy`,
+    `masturbation`,
+    `maid`,
+    `netorare`,
+    `hentai`,
+]
+
+function getHentaiImage()
 {
-    return akaneko.nsfw.hentai();
+    return eval(`akaneko.nsfw.` + tags[Math.floor(Math.random() * tags.length)] + `()`);
 }
 
-module.exports.yourFunctionName = yourFunctionName;
+module.exports.getHentaiImage = getHentaiImage;
