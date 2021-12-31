@@ -14,4 +14,4 @@ api.get('/image',  (req, res) =>
     })
 });
 
-api.listen(3000);
+api.listen(process.env.PORT);
